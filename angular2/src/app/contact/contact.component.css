@@ -1,0 +1,20 @@
+.contact-form {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}   
+/* Apply styles to the paragraph */
+p {
+    font:bolder;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0; /* Adjust margin for spacing */
+  }
+/* Apply styles to the iframe */
+iframe {
+    width: 99vw; /* Set the width to 100% of the viewport width */
+  }

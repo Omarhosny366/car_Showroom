@@ -1,0 +1,77 @@
+<div class="container mt-5">
+    <h2>Buy your comfort.</h2>
+
+    <div class="row form-section">
+        <!-- User Information Section -->
+        <div class="col-md-6">
+            <form>
+                <h3>User Information</h3>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" class="form-control" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        required>
+                    <small id="emailHelp" class="form-text text-black">Please enter a valid email address.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobileNumber">Mobile Number:</label>
+                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}"
+                        required>
+                    <small id="mobileHelp" class="form-text text-black">Please enter a 11-digit mobile number.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method:</label>
+                    <select class="form-control" id="paymentMethod" name="paymentMethod" required>
+                        <option value="creditCard">Credit Card</option>
+                        <option value="debitCard">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="termsAndConditions" required>
+                    <label class="form-check-label" for="termsAndConditions">I agree to the Terms and Conditions</label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Car Selection Section -->
+        <div class="col-md-6">
+            <form>
+                <h3>Car Selection</h3>
+                <div class="form-group">
+                    <label for="carType">Select your car</label>
+                    <select class="form-control" id="carType" name="carType">
+                        <option value="BMW_X7">BMW X7 - $265,000</option>
+                        <option value="BMW_750i">BMW 750 i - $305,000</option>
+                        <option value="BMW_XM">BMW XM - $258,000</option>
+                        <option value="BMW_7series">BMW 7 series - $320,000</option>
+                        <option value="BMW_7series">BMW 320I - $100,000</option>
+                        <option value="BMW_i4">BMW i4 - $88,000</option>
+                        <option value="PORSCHE_911">Porsche 911 - $350,000</option>
+                        <option value="PORSCHE_macan">Porsche macan - $120,000</option>
+                        <option value="PORSCHE_spyder">Porsche spyder - $450,000</option>
+                        <option value="PORSCHE_PanameraEhybrid">Porsche Panamera E-hybrid - $160,000</option>
+                        <option value="PORSCHE_718Boxster">Porsche 718 Boxster - $110,000</option>
+                        <option value="PORSCHE_Cayenne">Porsche Cayenne - $200,000</option>
+                        <option value="MASERATI_Ghibli">Maserati Ghibli - $164,544</option>
+                        <option value="MASERATI_MC20">Maserati MC20 - $450,000</option>
+                        <option value="MASERATI_3500GT">Maserati 3500 GT - $800,000</option>
+                        <option value="MASERATI_GrandCabrio">Maserati Grand Cabrio - $200,999</option>
+                        <option value="MASERATI_GrandCabrio">Maserati A6G - $1,000,999</option>
+                        <option value="MASERATI_coupe">Maserati coupe - $193,733</option>
+                        <option value="AUDI_A6G">Audi Q7 - $200,000</option>
+                        <option value="AUDI_RS7">Audi RS7 - $310,000</option>
+                        <option value="AUDI_RS8">Audi R8 - $390,600</option>
+                        <option value="AUDI_Q8Etron">Audi Q8-Etron - $300,000</option>
+                        <option value="AUDI_S5">Audi S5 - $240,000</option>
+                        <option value="AUDI_A3">Audi A3 - $90,000</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-success mt-3" onclick="completePurchase()">Complete Purchase</button>

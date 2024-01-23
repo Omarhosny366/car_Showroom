@@ -1,0 +1,60 @@
+
+body,
+h2,
+h3,
+p,
+a {
+    color: white; /* Set text color to white */
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 100px; /* Adjust margin-bottom to create space for the footer */
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Override text color for form elements within .form-section */
+.form-section label,
+.form-section input,
+.form-section select,
+.form-section button {
+    color: black;
+}
+
+/* Add this if you want to make links black as well */
+a {
+    color: black;
+}

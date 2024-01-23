@@ -1,0 +1,84 @@
+<!-- bmw.component.html -->
+<body>
+<div id="bmw" class="section">
+    <div class="parent">
+      <div class="card mb-3" *ngFor="let car of cars">
+        <div class="card-image">
+          <img [src]="car.image" class="card-img-top" alt="...">
+        </div>
+        <div class="card-details">
+          <div class="card-body">
+            <h5 class="card-title">{{ car.name }}</h5>
+            <p class="card-text">{{ car.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- audi.component.html -->
+<div id="audi" class="section">
+  
+    <div class="parent">
+      <div class="card mb-3" *ngFor="let carAudi of carsAudi">
+        <div class="card-image">
+          <img [src]="carAudi.image" class="card-img-top" alt="...">
+        </div>
+        <div class="card-details">
+          <div class="card-body">
+            <h5 class="card-title">{{ carAudi.name }}</h5>
+            <p class="card-text">{{ carAudi.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="porsche" class="section">
+
+    <div class="parent">
+      <div class="card mb-3" *ngFor="let carPorsche of carsPorsche">
+        <div class="card-image">
+          <img [src]="carPorsche.image" class="card-img-top" alt="...">
+        </div>
+        <div class="card-details">
+          <div class="card-body">
+            <h5 class="card-title">{{ carPorsche.name }}</h5>
+            <p class="card-text">{{ carPorsche.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- maserati.component.html -->
+<div id="maserati" class="section">
+    
+  
+    <div class="parent">
+      <div class="card mb-3" *ngFor="let carMaserati of carsMaserati">
+        <div class="card-image">
+          <img [src]="carMaserati.image" class="card-img-top" alt="...">
+        </div>
+        <div class="card-details">
+          <div class="card-body">
+            <h5 class="card-title">{{ carMaserati.name }}</h5>
+            <p class="card-text">{{ carMaserati.description }}</p>
+        
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>
+<div class="parent">
+  <div class="card mb-3">
+    <div class="card-details" style="opacity: 0;">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+

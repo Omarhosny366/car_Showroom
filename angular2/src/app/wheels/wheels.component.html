@@ -1,0 +1,13 @@
+<body>
+<div class="card custom-card" *ngFor="let car of cars">
+    <img [src]="car.logoSrc" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ car.title }}</h5>
+      <p class="card-text">{{ car.description }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let model of car.models">{{ model }}</li>
+    </ul>
+  </div>
+</body>
+  
